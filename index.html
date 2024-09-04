@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css'/>
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+	<link rel="preconnect" href="https://fonts.googleapis.com"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"/>
+	
+	<link rel="stylesheet" href="./styles/style.css">
+	
+	<link rel="shortcut icon" href="./assets/img/Logo.svg" type="image/x-icon">
+    <title>Portifolio - Rafael</title>
+</head>
+<body>
+	<div class="container-scroll">
+		<header class="header">
+			<div class="div-logo">
+				<a href="#">
+					<img data-aos="fade-down" data-aos-duration="1000" class="logo" src="./assets/img/Logo.svg" alt="Logo">
+				</a>
+			</div>
+			<nav class="nav">
+				<ul class="list-link">
+					<li data-aos="fade-up" data-aos-duration="1000" class="link"><a href="#"><strong>About</strong></a></li>
+					<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" class="link"><a href="#"><strong>Projects</strong></a></li>
+					<li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="link"><a href="#"><strong>Contact</strong></a></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<div class="main">
+					<h2 
+						data-scroll
+						data-scroll-speed="3"
+						data-scroll-position="top"
+						data-scroll-direction="horizontal"
+					class="text">
+						Olá, seja Bem-Vindo
+					</h2>
+
+					<h1 class="title">
+						Meu Nome é Rafael
+					</h1>
+
+					<div 
+						data-scroll
+						data-scroll-speed="-3"
+						data-scroll-position="top"
+						data-scroll-direction="horizontal"
+					class="div-work">
+						<h2 class="text">
+							Developer
+						</h2>
+						<h2 class="text escrita">
+							Back-end
+						</h2>
+					</div>
+			</div>
+		</section>
+		<section id="sectionPin">
+			<div class="pin-wrap">
+				<div class="text-skills">
+					<h1>
+						Skills
+					</h1>
+					<p class="escrita-skill" data-aos-delay="200">
+						A seguir vou mostra todas as minhas Skills de Front-end e Back-end
+					</p>
+				</div>
+				<div class="skills">
+					<div class="title-skills">
+						<h1>Front-end:</h1>
+					</div>
+					<div class="card-skills">
+						<div class="card">
+							<img src="./assets/img/skills/front-end/html-5.png" alt="logo html">
+							<h1>HTML</h1>
+						</div>
+						<div class="card">
+							<img src="./assets/img/skills/front-end/css-3.png" alt="logo css">
+							<h1>CSS</h1>
+						</div>
+						<div class="card">
+							<img src="./assets/img/skills/front-end/js.png" alt="logo js">
+							<h1>JS</h1>
+						</div>
+					</div>
+					<div class="card-skills">
+						<div class="card">
+							<img src="./assets/img/skills/front-end/sass.png" alt="logo sass">
+							<h1>SASS</h1>
+						</div>
+						<div class="card">
+							<img src="./assets/img/skills/front-end/tailwind.png" alt="logo tailwind">
+							<h1>Tailwind</h1>
+						</div>
+						<div class="card">
+							<img src="./assets/img/skills/front-end/biblioteca/react.png" alt="logo react">
+							<h1>React</h1>
+						</div>
+					</div>
+				</div>
+				<div class="skills">
+					<div class="title-skills">
+						<h1>Back-end:</h1>
+					</div>
+					<div class="card-skills">
+						<div class="card">
+							<img src="./assets/img/skills/back-end/node-js.png" alt="logo sass">
+							<h1>Node.js</h1>
+						</div>
+						<div class="card">
+							<img src="./assets/img/skills/back-end/python.png" alt="logo tailwind">
+							<h1>Python</h1>
+						</div>
+					</div>
+					<div class="card-skills">
+						<div class="card">
+							<img src="./assets/img/skills/back-end/bd/Postgresql.png" alt="logo sass">
+							<h1>Postgresql</h1>
+						</div>
+						<div class="card">
+							<img src="./assets/img/skills/back-end/bd/mongodb.png" alt="logo react">
+							<h1>Mongodb</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+	<script src='https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js'></script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="./script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+*{
+  margin: 0;
+  padding:0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  transition: 0.3s ease-out;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  overscroll-behavior: none;
+  font-family: 'Pooppins', sans-serif;
+  background-color: #000C14;
+}
+
+img{
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  width: 100%;
+
+}
+
+.logo{
+  width: 5rem;
+}
+
+.list-link{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.link a{
+  color: #f2f2f2;
+  font-size: 18px;
+}
+
+.main{
+  height: 100vh;
+  background: #000C14;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.title{
+  color: #FFF;
+  font-size: 50px;
+}
+
+.text{
+  color: #FFF;
+  font-size: 34px;
+}
+
+.div-work{
+  display: flex;
+  gap: 10px;
+}
+
+.escrita{
+  color: #88CDFF;
+  border-right: 4px solid #0094FF;
+  width: 8.3ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1s steps(8), blinking 0.5s infinite step-end alternate;
+}
+
+@keyframes typing{
+  from{
+    width: 0;
+  }
+}
+
+@keyframes blinking{
+  50% {
+    border-color: transparent;
+  }
+}
+
+section:not(#sectionPin){
+  min-height: 100vh;
+  width: 100%;
+}
+
+#sectionPin{
+  height: 100vh;
+  overflow: hidden;
+  background: #003962;
+  color: #f2f2f2;
+  left: 0;
+  display: flex;
+}
+
+.text-skills{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.text-skills h1{
+  font-size: 64px;
+}
+
+.text-skills p{
+  font-size: 24px;
+}
+
+.escrita-skill{
+  border-right: 4px solid #88CDFF;
+  width: 55ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(55), blinking 0.5s infinite step-end alternate;
+}
+
+.title-skills h1{
+  font-size: 64px;
+}
+
+.card-skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  color: #000C14;
+  border-radius: 25px;
+  margin-top: 10px;
+  width: 10vw;
+  height: 25vh;
+}
+
+.card img{
+  width: 6rem;
+  margin-bottom: 18px;
+}
+
+
+.skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pin-wrap{
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 50px 10vw;
+}
+
+.pin-wrap > *{
+  min-width: 60vw;
+  padding: 0 5vw;
+}
+
+.pin-wrap h2{
+  font-size: 36px;
+}
