@@ -1,5 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
+AOS.init();
+
 const pageContainer = document.querySelector(".container-scroll")
 
 const scroller = new LocomotiveScroll({

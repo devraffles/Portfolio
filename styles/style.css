@@ -157,6 +157,10 @@ section:not(#sectionPin){
   font-size: 64px;
 }
 
+.title-skills{
+  font-size: 40px;
+}
+
 .text-skills p{
   font-size: 24px;
 }
@@ -178,8 +182,8 @@ section:not(#sectionPin){
   color: var(--blue-pricipal);
   border-radius: 25px;
   margin-top: 10px;
-  width: 12vw;
-  height: 25vh;
+  width: 10vw;
+  height: 24vh;
 }
 
 .card img{
@@ -215,7 +219,7 @@ section:not(#sectionPin){
 .projects{
   background-color: var(--blue-white);
   width: 100%;
-  height: 101vh;
+  height: 100vh;
   color: var(--blue-pricipal);
   display: flex;
   justify-content: center;
@@ -361,12 +365,28 @@ section:not(#sectionPin){
     font-size: 32px;
   }
 
+  .text-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .text-skills h1{
-    font-size: 32px;
+    font-size: 50px;
   }
 
   .text-skills p{
-    font-size: 18px;
+    font-size: 24px;
+    width: 75vw;
+    text-align: center;
   }
 
+  .pin-wrap > *{
+    min-width: 110vw;
+    padding: 0 5vw;
+  }
+
+  .card{
+    width: 30vw;
+    height: 26vh;
+  }
 }
