@@ -161,12 +161,6 @@ section:not(#sectionPin){
   font-size: 24px;
 }
 
-.title-skills h1{
-  font-size: 64px;
-}
-
-
-
 .card-skills{
   display: flex;
   justify-content: center;
@@ -333,4 +327,46 @@ section:not(#sectionPin){
 
 .contact-arrow a:hover::after{
   width: 100%;
+}
+
+@media screen and (max-width: 768px){
+  .header{
+    flex-direction: column;
+  }
+
+  .div-logo img{
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 25vw;
+    margin-bottom: 10px;
+  }
+
+  .list-link{
+    flex-direction: column;
+  }
+
+  .link strong{
+    font-size: 24px;
+  }
+
+  .main{
+    height: 70vh;
+  }
+
+  .text{
+    font-size: 24px;
+  }
+
+  .title{
+    font-size: 32px;
+  }
+
+  .text-skills h1{
+    font-size: 32px;
+  }
+
+  .text-skills p{
+    font-size: 18px;
+  }
+
 }
