@@ -390,7 +390,7 @@ section:not(#sectionPin){
     height: 26vh;
   }
   .contact-title{
-  font-size: 24px;
+    font-size: 24px;
+    text-align: center;
   }
-}
 }
