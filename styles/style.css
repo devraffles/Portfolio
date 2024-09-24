@@ -389,4 +389,8 @@ section:not(#sectionPin){
     width: 30vw;
     height: 26vh;
   }
+  .contact-title{
+  font-size: 24px;
+  }
+}
 }
