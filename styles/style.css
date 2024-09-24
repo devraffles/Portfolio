@@ -182,7 +182,7 @@ section:not(#sectionPin){
   color: var(--blue-pricipal);
   border-radius: 25px;
   margin-top: 10px;
-  width: 10vw;
+  width: 12vw;
   height: 24vh;
 }
 
