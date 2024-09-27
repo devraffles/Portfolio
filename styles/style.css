@@ -483,7 +483,7 @@ section:not(#sectionPin){
 
 @media screen and (max-width: 480px){
   .pin-wrap > *{
-    min-width: 60vw;
+    min-width: 110vw;
     padding: 0 5vw;
   }
 }
