@@ -182,8 +182,8 @@ section:not(#sectionPin){
   color: var(--blue-pricipal);
   border-radius: 25px;
   margin-top: 10px;
-  width: 10vw;
-  height: 24vh;
+  width: 12vw;
+  height: 26vh;
 }
 
 .card img{
@@ -483,6 +483,7 @@ section:not(#sectionPin){
 
 @media screen and (max-width: 480px){
   .pin-wrap > *{
-    min-width: 100vw;
+    min-width: 60vw;
+    padding: 0 5vw;
   }
 }
