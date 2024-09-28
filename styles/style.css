@@ -486,4 +486,13 @@ section:not(#sectionPin){
     min-width: 100vw;
     padding: 0 5vw;
   }
+  
+  .card{
+    width: 32vw;
+    height: 24vh;
+  }
+  
+  .card h1{
+    font-size: 18px;
+  }
 }
