@@ -340,10 +340,6 @@ section:not(#sectionPin){
     width: 16vw;
     height: 26vh;
   }
-  
-  .card h1{
-    font-size: 20px;
-  }
 
   .cards-projects{
     margin-left: 12rem;
@@ -381,10 +377,6 @@ section:not(#sectionPin){
 
   .card-abount-project{
     font-size: 14px;
-  }
-
-  .pin-wrap > *{
-    min-width: 100vw;
   }
 }
 
