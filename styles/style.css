@@ -428,7 +428,7 @@ section:not(#sectionPin){
   }
 
   .pin-wrap > *{
-    min-width: 150vw;
+    min-width: 200vw;
   }
 
   .card{
