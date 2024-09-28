@@ -509,6 +509,10 @@ section:not(#sectionPin){
   }
 
   .card-abount-project{
-    font-size: 12px;
+    font-size: 14px;
+  }
+
+  .contact-title{
+    font-size: 34px;
   }
 }
