@@ -495,4 +495,20 @@ section:not(#sectionPin){
   .card h1{
     font-size: 18px;
   }
+  
+  .card-project{
+    width: 24rem;
+  }
+
+  #nutri {
+    width: 8rem;
+  }
+
+  .card-title-project{
+    font-size: 18px;
+  }
+
+  .card-abount-project{
+    font-size: 12px;
+  }
 }
