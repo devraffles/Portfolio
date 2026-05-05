@@ -3,7 +3,9 @@
 import { useState, useEffect } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import { navLinks } from '@/data/nav';
+import Logo from '@/assets/logo/Logo.svg';
 
 export function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,10 +30,10 @@ export function Nav() {
       >
         <a
           href="#"
-          className="font-syne text-sm font-bold tracking-wider text-porto focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
+          className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green rounded-sm"
           aria-label="Rafael Giorgi — Início"
         >
-          RG<span className="text-green">.</span>
+          <Image src={Logo} alt="Logo RG" width={64} height={64} />
         </a>
 
         <div className="hidden items-center gap-6 sm:flex">
