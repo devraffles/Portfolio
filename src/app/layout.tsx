@@ -38,17 +38,17 @@ export const metadata: Metadata = {
     'Jest',
     'Scrum',
   ],
-  authors: [{ name: 'Rafael dos Santos Giorgi', url: 'https://portfolio-rafael.vercel.app' }],
+  authors: [{ name: 'Rafael dos Santos Giorgi', url: 'https://portfolio-ashy-xi-45.vercel.app' }],
   creator: 'Rafael Giorgi',
   openGraph: {
     type: 'profile',
-    url: 'https://portfolio-rafael.vercel.app',
+    url: 'https://portfolio-ashy-xi-45.vercel.app',
     title: 'Rafael Giorgi — Desenvolvedor Back-end Node.js & TypeScript',
     description:
       'Desenvolvedor back-end especializado em Node.js e TypeScript com 50% de melhoria em eficiência operacional. Projetos com IA, IoT e React.',
     images: [
       {
-        url: 'https://portfolio-rafael.vercel.app/og-image.png',
+        url: 'https://portfolio-ashy-xi-45.vercel.app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Rafael Giorgi — Desenvolvedor Back-end',
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     title: 'Rafael Giorgi — Desenvolvedor Back-end',
     description:
       'Desenvolvedor back-end especializado em Node.js e TypeScript com 50% de melhoria em eficiência operacional.',
-    images: ['https://portfolio-rafael.vercel.app/og-image.png'],
+    images: ['https://portfolio-ashy-xi-45.vercel.app/og-image.png'],
     creator: '@devraffles',
   },
   robots: {
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://portfolio-rafael.vercel.app',
+    canonical: 'https://portfolio-ashy-xi-45.vercel.app',
   },
 };
 
@@ -93,7 +93,7 @@ const personSchema = {
   '@type': 'Person',
   name: 'Rafael dos Santos Giorgi',
   jobTitle: 'Desenvolvedor Back-end',
-  url: 'https://portfolio-rafael.vercel.app',
+  url: 'https://portfolio-ashy-xi-45.vercel.app',
   email: 'devraffles@gmail.com',
   telephone: '+55-19-98162-7300',
   address: {
@@ -130,7 +130,7 @@ const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Portfólio Rafael Giorgi',
-  url: 'https://portfolio-rafael.vercel.app',
+  url: 'https://portfolio-ashy-xi-45.vercel.app',
   description: 'Portfólio de Rafael Giorgi, desenvolvedor back-end especializado em Node.js e TypeScript.',
   author: {
     '@type': 'Person',
