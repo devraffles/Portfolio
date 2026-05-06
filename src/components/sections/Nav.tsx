@@ -5,7 +5,7 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import { navLinks } from '@/data/nav';
-import Logo from '@/assets/logo/Logo.svg';
+import Logo from '../../../public/logo.svg';
 
 export function Nav() {
   const [isOpen, setIsOpen] = useState(false);

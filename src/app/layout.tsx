@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { Syne, DM_Mono } from 'next/font/google';
 import './globals.css';
+import faviconHref from '../../public/Logo_favicon.ico';
 
 const syne = Syne({
   subsets: ['latin'],
@@ -142,7 +143,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="pt-BR" className={`${syne.variable} ${dmMono.variable}`}>
       <head>
-        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+        <link rel="icon" href={faviconHref.src} type="image/x-icon" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
