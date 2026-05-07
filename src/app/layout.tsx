@@ -18,7 +18,7 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Rafael Giorgi — Desenvolvedor Back-end Node.js & TypeScript | Campinas, SP',
+  title: 'Rafael Giorgi Desenvolvedor Back-end Node.js & TypeScript | Campinas, SP',
   description:
     'Portfólio de Rafael Giorgi, desenvolvedor back-end especializado em Node.js, TypeScript e APIs REST. Experiência em integração de sistemas corporativos com resultado de 50% de ganho em eficiência operacional. Projetos com IA, IoT e React.',
   keywords: [
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'profile',
     url: 'https://portfolio-ashy-xi-45.vercel.app',
-    title: 'Rafael Giorgi — Desenvolvedor Back-end Node.js & TypeScript',
+    title: 'Rafael Giorgi  Desenvolvedor Back-end Node.js & TypeScript',
     description:
       'Desenvolvedor back-end especializado em Node.js e TypeScript com 50% de melhoria em eficiência operacional. Projetos com IA, IoT e React.',
     images: [
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         url: 'https://portfolio-ashy-xi-45.vercel.app/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Rafael Giorgi — Desenvolvedor Back-end',
+        alt: 'Rafael Giorgi  Desenvolvedor Back-end',
       },
     ],
     firstName: 'Rafael',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Rafael Giorgi — Desenvolvedor Back-end',
+    title: 'Rafael Giorgi  Desenvolvedor Back-end',
     description:
       'Desenvolvedor back-end especializado em Node.js e TypeScript com 50% de melhoria em eficiência operacional.',
     images: ['https://portfolio-ashy-xi-45.vercel.app/og-image.png'],

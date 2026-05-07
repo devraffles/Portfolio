@@ -10,7 +10,7 @@ export const projectsData: Project[] = [
     description:
       'Plataforma de fitness que gera treinos personalizados via LLMs. O back-end em Fastify + TypeScript expõe uma API robusta com autenticação e integração a modelos de linguagem. Front-end em Next.js + Tailwind CSS. Gerenciado com Jira em metodologia ágil, com testes automatizados com Jest e containerização Docker para garantir rastreabilidade e escalabilidade.',
     challenge:
-      'Gerenciar escopo e complexidade de um produto completo com IA generativa dentro de um prazo acadêmico — tomando decisões de arquitetura que não comprometam a evolução do sistema.',
+      'Gerenciar escopo e complexidade de um produto completo com IA generativa dentro de um prazo acadêmico tomando decisões de arquitetura que não comprometam a evolução do sistema.',
     status: 'development',
     tags: ['Node.js', 'Fastify', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Docker', 'Jest', 'LLM'],
     links: [
@@ -41,7 +41,7 @@ export const projectsData: Project[] = [
     description:
       'Liderei o back-end de um sistema logístico com APIs RESTful em Flask/Python integradas a dispositivos IoT físicos. O maior desafio foi garantir comunicação em tempo real entre os dispositivos e o banco de dados PostgreSQL com consistência e baixa latência. Entregue com dashboard interativo em TypeScript com visualização de dados em mapas e testes automatizados.',
     challenge:
-      'Integração de dispositivos IoT físicos com sincronização em tempo real — o que exigiu decisões precisas de arquitetura para manter consistência dos dados sem degradar performance.',
+      'Integração de dispositivos IoT físicos com sincronização em tempo real  o que exigiu decisões precisas de arquitetura para manter consistência dos dados sem degradar performance.',
     status: 'completed',
     tags: ['Python', 'Flask', 'PostgreSQL', 'TypeScript', 'IoT', 'REST API', 'Testes automatizados'],
     links: [
@@ -63,7 +63,7 @@ export const projectsData: Project[] = [
         'Testes automatizados garantindo confiabilidade',
       ],
       socialProof:
-        'Projeto com visibilidade no LinkedIn — posts da equipe demonstram impacto real e adoção do sistema.',
+        'Projeto com visibilidade no LinkedIn  posts da equipe demonstram impacto real e adoção do sistema.',
     },
   },
   {
@@ -73,7 +73,7 @@ export const projectsData: Project[] = [
     title: 'Don Napoli',
     subtitle: 'Ecossistema completo de pedidos para restaurante',
     description:
-      "Arquitetei um ecossistema de 3 camadas: app mobile (React Native), painel admin (Next.js) e site web — todos conectados por uma API centralizada com JWT, Prisma ORM e Clean Code. Banco de dados PostgreSQL com princípios de arquitetura pensados para operação real.",
+      "Arquitetei um ecossistema de 3 camadas: app mobile (React Native), painel admin (Next.js) e site web  todos conectados por uma API centralizada com JWT, Prisma ORM e Clean Code. Banco de dados PostgreSQL com princípios de arquitetura pensados para operação real.",
     challenge:
       'Arquitetar autenticação e estado compartilhado entre três plataformas distintas (mobile, admin, web) mantendo consistência e segurança em cada camada.',
     status: 'maintenance',

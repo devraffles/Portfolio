@@ -31,7 +31,7 @@ export function Contact() {
 
           <p className="mb-7 text-xs leading-relaxed text-muted">
             Se você procura um desenvolvedor que entende arquitetura,<br />
-            escreve código limpo e quer crescer junto com a empresa — fale comigo.
+            escreve código limpo e quer crescer junto com a empresa fale comigo.
           </p>
 
           <div className="flex flex-col items-center gap-3 mb-5">

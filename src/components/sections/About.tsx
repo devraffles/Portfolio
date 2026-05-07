@@ -21,7 +21,7 @@ export function About() {
             <p className="text-xs font-medium tracking-widest uppercase text-muted mb-2.5">quem sou</p>
             <p className="text-sm leading-relaxed text-porto/75">
               Sou o tipo de desenvolvedor que <strong className="text-porto font-medium">pensa antes de digitar</strong>.
-              Antes de escrever uma linha, entendo o problema — porque código que resolve
+              Antes de escrever uma linha, entendo o problema porque código que resolve
               problema errado com perfeição ainda é código inútil.
               Sou movido por inovação, obcecado com organização e persistente o suficiente
               para não largar algo até estar certo.
@@ -56,7 +56,7 @@ export function About() {
                 <strong className="text-porto font-medium">Grupo VIP</strong>,
                 implementando automações corporativas. Desenvolvendo o{' '}
                 <strong className="text-porto font-medium">FIT.IA</strong>
-                — plataforma de treinos com IA generativa.
+                 plataforma de treinos com IA generativa.
                 Inglês <strong className="text-porto font-medium">B1/B2</strong> com leitura e escrita técnica proficiente.
               </p>
             </article>

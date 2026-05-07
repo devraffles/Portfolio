@@ -18,10 +18,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!project) return {};
 
   return {
-    title: `${project.title} — Rafael Giorgi | Case Study`,
+    title: `${project.title} Rafael Giorgi | Case Study`,
     description: project.caseStudy.problem,
     openGraph: {
-      title: `${project.title} — Rafael Giorgi`,
+      title: `${project.title}  Rafael Giorgi`,
       description: project.subtitle,
       type: 'article',
     },

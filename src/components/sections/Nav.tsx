@@ -31,7 +31,7 @@ export function Nav() {
         <a
           href="#"
           className="flex items-center focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green rounded-sm"
-          aria-label="Rafael Giorgi — Início"
+          aria-label="Rafael Giorgi Início"
         >
           <Image src={Logo} alt="Logo RG" width={64} height={64} />
         </a>
