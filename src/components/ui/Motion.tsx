@@ -165,6 +165,49 @@ export function MotionLine({
   );
 }
 
+export function MotionGlow({
+  children,
+  delay = 0,
+  className = '',
+}: {
+  children: React.ReactNode;
+  delay?: number;
+  className?: string;
+}) {
+  const shouldReduce = useReducedMotion();
+  return (
+    <motion.div
+      variants={fadeIn}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: '-40px' }}
+      transition={{ duration: shouldReduce ? 0 : 0.5, delay: shouldReduce ? 0 : delay, ease: 'easeOut' }}
+      className={`${className} ${!shouldReduce ? 'animate-glow-pulse' : ''}`}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
+export function MotionScaleHover({
+  children,
+  className = '',
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  const shouldReduce = useReducedMotion();
+  return (
+    <motion.div
+      whileHover={shouldReduce ? {} : { scale: 1.05 }}
+      transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+      className={className}
+    >
+      {children}
+    </motion.div>
+  );
+}
+
 export function useCountUp(target: number, duration = 1200) {
   const [count, setCount] = useState(0);
   const shouldReduce = useReducedMotion();

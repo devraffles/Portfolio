@@ -1,18 +1,32 @@
 'use client';
 
 import { SectionLabel } from '@/components/ui/SectionLabel';
-import { MotionFadeUp, MotionStagger } from '@/components/ui/Motion';
+import { MotionFadeUp } from '@/components/ui/Motion';
 import { motion, useReducedMotion } from 'framer-motion';
-import { contactLinks } from '@/data/contact';
-import { MessageCircle } from 'lucide-react';
+import { MessageCircle, Github, Linkedin, Send } from 'lucide-react';
 
-const childVariant = {
-  hidden: { opacity: 0, x: -8 },
-  visible: { opacity: 1, x: 0 },
+const contactButtonVariants = {
+  initial: { scale: 1 },
+  hover: { scale: 1.05 },
+  tap: { scale: 0.97 },
+};
+
+const shineVariants = {
+  initial: { x: '-100%', opacity: 0 },
+  hover: { x: '100%', opacity: 1 },
 };
 
 export function Contact() {
   const shouldReduce = useReducedMotion();
+
+  const motionProps = shouldReduce
+    ? {}
+    : {
+        initial: 'initial',
+        whileHover: 'hover',
+        whileTap: 'tap',
+        transition: { type: 'spring', stiffness: 400, damping: 10 },
+      };
 
   return (
     <section id="contato" className="py-16" aria-labelledby="contato-heading">
@@ -34,42 +48,80 @@ export function Contact() {
             escreve código limpo e quer crescer junto com a empresa fale comigo.
           </p>
 
-          <div className="flex flex-col items-center gap-3 mb-5">
-            <motion.a
-              href="mailto:devraffles@gmail.com?subject=Oportunidade%20Back-end"
-              className="inline-flex items-center gap-2 bg-porto text-bg font-mono text-sm font-medium tracking-wider rounded-sm px-6 py-3 transition-opacity duration-200 hover:opacity-88 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
-              whileTap={shouldReduce ? {} : { scale: 0.97 }}
-            >
-              → devraffles@gmail.com
-            </motion.a>
-
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            {/* WhatsApp */}
             <motion.a
               href="https://wa.me/5519981627300"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-green-600 text-white font-mono text-sm font-medium tracking-wider rounded-sm px-6 py-3 transition-opacity duration-200 hover:opacity-88 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
-              whileTap={shouldReduce ? {} : { scale: 0.97 }}
+              className="relative group inline-flex items-center justify-center gap-3 bg-green-600 text-white font-mono text-sm font-medium tracking-wider rounded-sm px-6 py-4 overflow-hidden transition-[background-color,shadow] hover:shadow-glow-md hover:bg-green-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green sm:col-span-2 lg:col-span-1"
+              variants={contactButtonVariants}
+              {...motionProps}
             >
-              <MessageCircle size={16} />
-              WhatsApp
+              <div className="absolute inset-0 rounded-sm bg-green-500 opacity-0 group-hover:opacity-40 blur-xl transition-opacity duration-300 -z-10" />
+              {!shouldReduce && (
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent pointer-events-none"
+                  variants={shineVariants}
+                  transition={{ duration: 0.6, ease: 'easeInOut' }}
+                />
+              )}
+              <MessageCircle size={18} />
+              <span className="relative z-10">WhatsApp</span>
+            </motion.a>
+
+            {/* LinkedIn */}
+            <motion.a
+              href="https://linkedin.com/in/rafaelsgiorgi"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group inline-flex items-center justify-center gap-3 bg-[#0077B5] text-white font-mono text-sm font-medium tracking-wider rounded-sm px-6 py-4 overflow-hidden transition-[background-color,shadow] hover:shadow-glow-linkedin hover:bg-[#008cc9] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#00A0DC]"
+              variants={contactButtonVariants}
+              {...motionProps}
+            >
+              <div className="absolute inset-0 rounded-sm bg-[#00A0DC] opacity-0 group-hover:opacity-40 blur-xl transition-opacity duration-300 -z-10" />
+              {!shouldReduce && (
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent pointer-events-none"
+                  variants={shineVariants}
+                  transition={{ duration: 0.6, ease: 'easeInOut' }}
+                />
+              )}
+              <Linkedin size={18} />
+              <span className="relative z-10">LinkedIn</span>
+            </motion.a>
+
+            {/* GitHub */}
+            <motion.a
+              href="https://github.com/devraffles"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative group inline-flex items-center justify-center gap-3 bg-[#24292e] text-white font-mono text-sm font-medium tracking-wider rounded-sm px-6 py-4 overflow-hidden transition-[background-color,shadow] hover:shadow-glow-github hover:bg-[#33393f] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-400"
+              variants={contactButtonVariants}
+              {...motionProps}
+            >
+              <div className="absolute inset-0 rounded-sm bg-white opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-300 -z-10" />
+              {!shouldReduce && (
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent pointer-events-none"
+                  variants={shineVariants}
+                  transition={{ duration: 0.6, ease: 'easeInOut' }}
+                />
+              )}
+              <Github size={18} />
+              <span className="relative z-10">GitHub</span>
             </motion.a>
           </div>
 
-          <MotionStagger className="flex flex-wrap justify-center gap-2.5">
-            {contactLinks.map((link) => (
-              <motion.a
-                key={link.href}
-                href={link.href}
-                target={link.href.startsWith('http') ? '_blank' : undefined}
-                rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                variants={childVariant}
-                transition={{ duration: 0.2, ease: 'easeOut' }}
-                className="inline-flex items-center gap-1.5 border border-border2 text-muted hover:text-porto hover:border-white/25 font-mono text-xs tracking-widest uppercase rounded-sm px-4 py-2.5 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
-              >
-                {link.icon} {link.label}
-              </motion.a>
-            ))}
-          </MotionStagger>
+          <div className="mt-8">
+            <motion.a
+              href="mailto:devraffles@gmail.com?subject=Oportunidade%20Back-end"
+              className="inline-flex items-center gap-2 text-muted hover:text-porto transition-colors duration-200 font-mono text-sm tracking-widest"
+              whileHover={{ x: 4 }}
+            >
+              <Send size={14} /> devraffles@gmail.com
+            </motion.a>
+          </div>
         </div>
       </MotionFadeUp>
     </section>

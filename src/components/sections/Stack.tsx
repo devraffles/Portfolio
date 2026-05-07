@@ -3,7 +3,7 @@
 import { stackData } from '@/data/stack';
 import { SectionLabel } from '@/components/ui/SectionLabel';
 import { MotionFadeUp, MotionStagger, MotionBar } from '@/components/ui/Motion';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 const childVariant = {
   hidden: { opacity: 0, y: 8 },
@@ -19,6 +19,7 @@ function StackGroup({
   items: typeof stackData;
   barColor: string;
 }) {
+  const shouldReduce = useReducedMotion();
   return (
     <MotionFadeUp>
       <h3 className="mb-4 text-xs font-medium tracking-widest uppercase text-muted">{title}</h3>
@@ -27,8 +28,9 @@ function StackGroup({
           <motion.div
             key={item.name}
             variants={childVariant}
-            transition={{ duration: 0.3, ease: 'easeOut' }}
-            className="rounded-sm border border-border bg-surface p-3 flex flex-col gap-1.5"
+            whileHover={shouldReduce ? {} : { scale: 1.05, borderColor: 'rgba(255,255,255,0.12)' }}
+            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+            className="rounded-sm border border-border bg-surface p-3 flex flex-col gap-1.5 cursor-default transition-colors duration-200"
           >
             <div className="text-xs font-medium text-porto">{item.name}</div>
             <div className="h-0.5 rounded-full bg-border2 overflow-hidden">

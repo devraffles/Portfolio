@@ -4,7 +4,6 @@ import { certificationsData } from '@/data/certifications';
 import { SectionLabel } from '@/components/ui/SectionLabel';
 import { MotionStagger } from '@/components/ui/Motion';
 import { motion } from 'framer-motion';
-import { ExternalLink } from 'lucide-react';
 
 const childVariant = {
   hidden: { opacity: 0, y: 8 },
@@ -29,18 +28,6 @@ export function Certifications() {
                 <p className="text-xs font-medium text-porto leading-snug pr-2">{cert.name}</p>
                 <p className="text-xs text-muted">{cert.organization}</p>
               </div>
-              {cert.url && (
-                <a
-                  href={cert.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-shrink-0 text-green hover:text-porto transition-colors opacity-0 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green"
-                  title="Visualizar certificado"
-                  aria-label={`Visualizar certificado: ${cert.name}`}
-                >
-                  <ExternalLink size={14} />
-                </a>
-              )}
             </div>
             <p className="text-xs text-green tracking-wider">{cert.year}</p>
             {cert.description && (

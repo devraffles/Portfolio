@@ -4,7 +4,7 @@ export function Footer() {
       <div>
         Rafael Giorgi<span className="text-green"> · </span>2026
       </div>
-      <div>Campinas, SP · Inglês B1/B2</div>
+      <div>Campinas, SP · Inglês Técnico</div>
     </footer>
   );
 }

@@ -7,11 +7,12 @@ import { Experience } from '@/components/sections/Experience';
 import { Certifications } from '@/components/sections/Certifications';
 import { Contact } from '@/components/sections/Contact';
 import { Footer } from '@/components/sections/Footer';
+import { FloatingCTA } from '@/components/ui/FloatingCTA';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-bg text-porto">
-      <div className="mx-auto max-w-2xl px-6 sm:px-12">
+      <main className="mx-auto max-w-2xl px-6 sm:px-12">
         <Nav />
         <Hero />
         <About />
@@ -21,7 +22,8 @@ export default function Home() {
         <Certifications />
         <Contact />
         <Footer />
-      </div>
+      </main>
+      <FloatingCTA />
     </div>
   );
 }
