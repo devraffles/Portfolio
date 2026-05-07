@@ -20,11 +20,9 @@ export function About() {
           <article className="rounded-sm border border-border bg-surface p-5">
             <p className="text-xs font-medium tracking-widest uppercase text-muted mb-2.5">quem sou</p>
             <p className="text-sm leading-relaxed text-porto/75">
-              Sou o tipo de desenvolvedor que <strong className="text-porto font-medium">pensa antes de digitar</strong>.
-              Antes de escrever uma linha, entendo o problema porque código que resolve
-              problema errado com perfeição ainda é código inútil.
-              Sou movido por inovação, obcecado com organização e persistente o suficiente
-              para não largar algo até estar certo.
+              Especialista em transformar problemas complexos em <strong className="text-porto font-medium">sistemas eficientes e escaláveis</strong>. 
+              Minha abordagem une rigor técnico com visão de produto: acredito que um bom código é aquele que resolve o problema certo 
+              com a arquitetura ideal. Sou movido por desafios que exigem lógica apurada e o uso estratégico de tecnologias modernas.
             </p>
           </article>
         </MotionFadeUp>
@@ -52,12 +50,10 @@ export function About() {
             <article className="rounded-sm border border-border bg-surface p-5">
               <p className="text-xs font-medium tracking-widest uppercase text-muted mb-2.5">atualmente</p>
               <p className="text-sm leading-relaxed text-porto/75">
-                Cursando <strong className="text-porto font-medium">ADS na UniMetrocamp Wyden</strong>. Estagiário no{' '}
-                <strong className="text-porto font-medium">Grupo VIP</strong>,
-                implementando automações corporativas. Desenvolvendo o{' '}
-                <strong className="text-porto font-medium">FIT.IA</strong>
-                 plataforma de treinos com IA generativa.
-                Inglês <strong className="text-porto font-medium">B1/B2</strong> com leitura e escrita técnica proficiente.
+                Graduando em <strong className="text-porto font-medium">ADS pela UniMetrocamp Wyden</strong>. 
+                No <strong className="text-porto font-medium">Grupo VIP</strong>, atuo como Estagiário de Desenvolvimento, 
+                construindo automações que otimizam processos críticos da empresa. Em paralelo, lidero o desenvolvimento do <strong className="text-porto font-medium">FIT.IA</strong>, 
+                um ecossistema de saúde potencializado por Inteligência Artificial generativa.
               </p>
             </article>
           </MotionFadeUp>

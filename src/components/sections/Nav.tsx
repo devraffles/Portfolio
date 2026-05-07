@@ -25,7 +25,7 @@ export function Nav() {
       }`}
     >
       <nav
-        className="mx-auto flex max-w-2xl items-center justify-between px-6 py-5 sm:px-12"
+        className="mx-auto flex max-w-5xl items-center justify-between px-6 py-5 sm:px-12"
         aria-label="Navegação principal"
       >
         <a

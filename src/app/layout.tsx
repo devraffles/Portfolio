@@ -139,6 +139,8 @@ const websiteSchema = {
   },
 };
 
+import { Nav } from '@/components/sections/Nav';
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt-BR" className={`${syne.variable} ${dmMono.variable}`}>
@@ -164,6 +166,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Pular para conteúdo principal
         </a>
+        <Nav />
         <main id="main-content">{children}</main>
       </body>
     </html>

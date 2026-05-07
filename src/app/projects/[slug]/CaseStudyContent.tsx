@@ -50,7 +50,9 @@ export function CaseStudyContent({ project, prevProject, nextProject }: CaseStud
           className="mb-12"
         >
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-medium tracking-wider text-green">{project.number}</span>
+            {project.number && (
+              <span className="text-xs font-medium tracking-wider text-green">{project.number}</span>
+            )}
             <span className={`rounded-sm px-2.5 py-1 text-xs font-medium tracking-widest uppercase ${statusStyles[project.status]}`}>
               {statusText[project.status]}
             </span>
@@ -59,7 +61,9 @@ export function CaseStudyContent({ project, prevProject, nextProject }: CaseStud
           <h1 className="font-syne text-4xl sm:text-5xl font-bold tracking-tight text-porto mb-2">
             {project.title}
           </h1>
-          <p className="text-base text-muted tracking-wider">{project.subtitle}</p>
+          {project.subtitle && (
+            <p className="text-base text-muted tracking-wider">{project.subtitle}</p>
+          )}
         </motion.header>
 
         <motion.div
@@ -68,53 +72,61 @@ export function CaseStudyContent({ project, prevProject, nextProject }: CaseStud
           transition={{ duration: dur ?? 0.5, delay: dur === 0 ? 0 : 0.2, ease: 'easeOut' }}
           className="space-y-10"
         >
-          <section aria-labelledby="problem-heading">
-            <h2 id="problem-heading" className="text-xs font-medium tracking-widest uppercase text-green mb-3">
-              01 — Problema
-            </h2>
-            <p className="text-sm leading-relaxed text-porto/70">{project.caseStudy.problem}</p>
-          </section>
+          {project.caseStudy && (
+            <>
+              <section aria-labelledby="problem-heading">
+                <h2 id="problem-heading" className="text-xs font-medium tracking-widest uppercase text-green mb-3">
+                  01 — Problema
+                </h2>
+                <p className="text-sm leading-relaxed text-porto/70">{project.caseStudy.problem}</p>
+              </section>
 
-          <section aria-labelledby="solution-heading">
-            <h2 id="solution-heading" className="text-xs font-medium tracking-widest uppercase text-green mb-3">
-              02 — Solução Técnica
-            </h2>
-            <p className="text-sm leading-relaxed text-porto/70">{project.caseStudy.solution}</p>
-          </section>
+              <section aria-labelledby="solution-heading">
+                <h2 id="solution-heading" className="text-xs font-medium tracking-widest uppercase text-green mb-3">
+                  02 — Solução Técnica
+                </h2>
+                <p className="text-sm leading-relaxed text-porto/70">{project.caseStudy.solution}</p>
+              </section>
 
-          <section aria-labelledby="arch-heading">
-            <h2 id="arch-heading" className="text-xs font-medium tracking-widest uppercase text-green mb-3">
-              03 — Arquitetura
-            </h2>
-            <div className="rounded-sm border border-border bg-surface p-5">
-              <p className="text-xs font-mono leading-relaxed text-porto/60">{project.caseStudy.architecture}</p>
-            </div>
-          </section>
+              <section aria-labelledby="arch-heading">
+                <h2 id="arch-heading" className="text-xs font-medium tracking-widest uppercase text-green mb-3">
+                  03 — Arquitetura
+                </h2>
+                <div className="rounded-sm border border-border bg-surface p-5">
+                  <p className="text-xs font-mono leading-relaxed text-porto/60">{project.caseStudy.architecture}</p>
+                </div>
+              </section>
+            </>
+          )}
 
-          <section aria-labelledby="challenge-heading">
-            <h2 id="challenge-heading" className="text-xs font-medium tracking-widest uppercase text-green mb-3">
-              04 — Desafio Técnico
-            </h2>
-            <div className="rounded-r-sm border-l-2 border-green bg-surface2 px-4 py-3">
-              <p className="text-xs leading-relaxed text-porto/60">{project.challenge}</p>
-            </div>
-          </section>
+          {project.challenge && (
+            <section aria-labelledby="challenge-heading">
+              <h2 id="challenge-heading" className="text-xs font-medium tracking-widest uppercase text-green mb-3">
+                04 — Desafio Técnico
+              </h2>
+              <div className="rounded-r-sm border-l-2 border-green bg-surface2 px-4 py-3">
+                <p className="text-xs leading-relaxed text-porto/60">{project.challenge}</p>
+              </div>
+            </section>
+          )}
 
-          <section aria-labelledby="results-heading">
-            <h2 id="results-heading" className="text-xs font-medium tracking-widest uppercase text-green mb-3">
-              05 — Resultados
-            </h2>
-            <ul className="space-y-2">
-              {project.caseStudy.results.map((result, idx) => (
-                <li key={idx} className="flex items-start gap-2 text-sm text-porto/70">
-                  <span className="text-green mt-0.5 text-xs">→</span>
-                  {result}
-                </li>
-              ))}
-            </ul>
-          </section>
+          {project.caseStudy && project.caseStudy.results.length > 0 && (
+            <section aria-labelledby="results-heading">
+              <h2 id="results-heading" className="text-xs font-medium tracking-widest uppercase text-green mb-3">
+                05 — Resultados
+              </h2>
+              <ul className="space-y-2">
+                {project.caseStudy.results.map((result, idx) => (
+                  <li key={idx} className="flex items-start gap-2 text-sm text-porto/70">
+                    <span className="text-green mt-0.5 text-xs">→</span>
+                    {result}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
-          {project.caseStudy.socialProof && (
+          {project.caseStudy?.socialProof && (
             <section aria-labelledby="social-heading">
               <h2 id="social-heading" className="text-xs font-medium tracking-widest uppercase text-green mb-3">
                 06 — Prova Social

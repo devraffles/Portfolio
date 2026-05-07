@@ -13,16 +13,17 @@ export interface ProjectLink {
 export interface Project {
   id: string;
   slug: string;
-  number: string;
+  number?: string;
   title: string;
-  subtitle: string;
+  subtitle?: string;
   description: string;
-  challenge: string;
+  challenge?: string;
   status: 'development' | 'completed' | 'maintenance';
   tags: string[];
   links: ProjectLink[];
   order: number;
-  caseStudy: {
+  isGithubRepo?: boolean;
+  caseStudy?: {
     problem: string;
     solution: string;
     architecture: string;

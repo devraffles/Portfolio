@@ -1,4 +1,3 @@
-import { Nav } from '@/components/sections/Nav';
 import { Hero } from '@/components/sections/Hero';
 import { About } from '@/components/sections/About';
 import { Stack } from '@/components/sections/Stack';
@@ -12,8 +11,7 @@ import { FloatingCTA } from '@/components/ui/FloatingCTA';
 export default function Home() {
   return (
     <div className="min-h-screen bg-bg text-porto">
-      <main className="mx-auto max-w-2xl px-6 sm:px-12">
-        <Nav />
+      <main className="mx-auto max-w-5xl px-6 sm:px-12">
         <Hero />
         <About />
         <Stack />

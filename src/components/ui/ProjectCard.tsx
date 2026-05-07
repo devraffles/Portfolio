@@ -42,23 +42,31 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       whileHover={shouldReduce ? {} : { y: -2, borderColor: 'rgba(255,255,255,0.12)' }}
     >
       <div className="mb-4 flex items-start justify-between">
-        <span className="text-xs font-medium tracking-wider text-green">{project.number}</span>
+        {project.number ? (
+          <span className="text-xs font-medium tracking-wider text-green">{project.number}</span>
+        ) : (
+          <span className="text-xs font-medium tracking-wider text-green/50">Repo</span>
+        )}
         <span className={`rounded-sm px-2.5 py-1 text-xs font-medium tracking-widest uppercase ${statusStyles[project.status]}`}>
           {statusText[project.status]}
         </span>
       </div>
 
       <h3 className="mb-1 font-syne text-xl font-bold text-porto">{project.title}</h3>
-      <p className="mb-3.5 text-sm text-muted tracking-wider">{project.subtitle}</p>
+      {project.subtitle && (
+        <p className="mb-3.5 text-sm text-muted tracking-wider">{project.subtitle}</p>
+      )}
 
       <p className="mb-4 text-sm leading-relaxed text-porto/65">
         {project.description}
       </p>
 
-      <div className="mb-4 rounded-r-sm border-l-2 border-green bg-surface2 px-4 py-3">
-        <p className="mb-1 text-xs font-medium tracking-widest uppercase text-green">Desafio técnico</p>
-        <p className="text-xs leading-relaxed text-porto/60">{project.challenge}</p>
-      </div>
+      {project.challenge && (
+        <div className="mb-4 rounded-r-sm border-l-2 border-green bg-surface2 px-4 py-3">
+          <p className="mb-1 text-xs font-medium tracking-widest uppercase text-green">Desafio técnico</p>
+          <p className="text-xs leading-relaxed text-porto/60">{project.challenge}</p>
+        </div>
+      )}
 
       <div className="mb-3.5 flex flex-wrap gap-2">
         {project.links.map((link) => (

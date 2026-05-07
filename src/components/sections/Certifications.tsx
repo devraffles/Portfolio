@@ -15,7 +15,7 @@ export function Certifications() {
     <section className="py-10" aria-labelledby="cert-heading">
       <SectionLabel number="05" id="cert-heading">certificações</SectionLabel>
 
-      <MotionStagger className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <MotionStagger className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 gap-3">
         {certificationsData.map((cert) => (
           <motion.article
             key={cert.id}
