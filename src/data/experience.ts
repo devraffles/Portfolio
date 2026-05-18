@@ -2,7 +2,18 @@ import { Experience } from '@/types';
 
 export const experienceData: Experience[] = [
   {
-    id: 'vip-ti',
+    id: 'infocesi',
+    role: 'Auxiliar Técnico de TI',
+    company: 'Infocesi Soluções em Informática',
+    location: 'Campinas, SP',
+    startDate: 'Abril/2026',
+    endDate: 'Empregado',
+    description:
+      "Atuando com suporte técnico, manutenção de computadores, diagnóstico e resolução de problemas em hardware e software, atendimento aos clientes e apoio na infraestrutura de TI.",
+    current: true,
+  },
+  {
+    id: 'vip',
     role: 'Estagiário de TI',
     company: 'Grupo VIP',
     location: 'Campinas, SP',
@@ -10,7 +21,6 @@ export const experienceData: Experience[] = [
     endDate: 'Mai/2026',
     description:
       "Implementei o sistema m'AGILE em colaboração com a Mast Soluções & Tecnologia, automatizando rotinas operacionais e eliminando retrabalho nas equipes internas. Prestei suporte técnico proativo para reduzir o atrito na adoção do sistema, acelerando a integração entre setores e padronizando fluxos de processos internos.",
-    current: true,
   },
   {
     id: 'mast-support',
