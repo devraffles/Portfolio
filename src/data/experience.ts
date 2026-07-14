@@ -6,7 +6,8 @@ export const experienceData: Experience[] = [
     role: 'Auxiliar Técnico de TI',
     company: 'Infocesi Soluções em Informática',
     location: 'Campinas, SP',
-    startDate: 'Abril/2026',
+    startDate: 'Mai/2026',
+    endDate: 'Jul/2026',
     endDate: 'Empregado',
     description:
       "Atuando com suporte técnico, manutenção de computadores, diagnóstico e resolução de problemas em hardware e software, atendimento aos clientes e apoio na infraestrutura de TI.",
