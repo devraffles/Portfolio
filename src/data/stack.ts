@@ -14,7 +14,6 @@ export const stackData: StackItem[] = [
   { name: 'Flask', tier: 'secundário', proficiency: 62 },
   { name: 'React Native', tier: 'secundário', proficiency: 65 },
   { name: 'MySQL', tier: 'secundário', proficiency: 60 },
-  { name: 'Jest', tier: 'ferramenta', proficiency: 60 },
   { name: 'JWT / Auth', tier: 'ferramenta', proficiency: 78 },
   { name: 'AWS', tier: 'explorando', proficiency: 45 },
 ];
