@@ -8,7 +8,6 @@ export const experienceData: Experience[] = [
     location: 'Campinas, SP',
     startDate: 'Mai/2026',
     endDate: 'Jul/2026',
-    endDate: 'Empregado',
     description:
       "Atuando com suporte técnico, manutenção de computadores, diagnóstico e resolução de problemas em hardware e software, atendimento aos clientes e apoio na infraestrutura de TI.",
     current: true,
